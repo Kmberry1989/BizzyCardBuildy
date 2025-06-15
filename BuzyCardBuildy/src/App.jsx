@@ -55,6 +55,29 @@ const initialCardStyle = {
   finish: 'smooth',
 };
 
+// Base style description used when creating new cards
+const initialStylePrompt =
+  'Clean and professional layout with modern sans-serif typography.';
+
+// Collection of reusable style templates
+const styleTemplates = {
+  'Modern Minimal': {
+    cardBackgroundColor: '#ffffff',
+    textColor: '#1f2937',
+    primaryColor: '#3b82f6',
+    secondaryColor: '#64748b',
+    stylePrompt:
+      'Modern minimalist style with generous white space and sans-serif fonts.',
+  },
+  'Dark Elegant': {
+    cardBackgroundColor: '#1f2937',
+    textColor: '#f9fafb',
+    primaryColor: '#8b5cf6',
+    secondaryColor: '#d1d5db',
+    stylePrompt: 'Elegant dark theme using purple highlights and clean layout.',
+  },
+};
+
 const iconOptions = {
     phone: [<Phone size={14} />, <PhoneCall size={14} />, <Smartphone size={14} />, <Voicemail size={14} />, 'None'],
     email: [<Mail size={14} />, <AtSign size={14} />, <Inbox size={14} />, <Mailbox size={14} />, 'None'],
