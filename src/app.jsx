@@ -481,16 +481,3 @@ function App() {
 }
 
 export default App;
-    <div className="min-h-screen bg-gradient-to-br from-slate-100 to-sky-100 py-8 px-4 font-sans">
-      <header className="text-center mb-10"><h1 className="text-4xl md:text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-pink-600">AI Business Card Generator</h1><p className="text-lg text-gray-600 mt-2">Let AI be your creative partner. Fill in your details and generate a design.</p></header>
-      {error && <div className="my-4 p-4 bg-red-100 border-red-400 text-red-700 rounded-lg max-w-3xl mx-auto"><strong>Error:</strong> {error} <button onClick={() => setError(null)} className="ml-4 px-2 py-1 text-xs bg-red-200 rounded">Dismiss</button></div>}
-      <div className="container mx-auto flex flex-col lg:flex-row gap-8 max-w-7xl">
-        <CardInputForm {...{ cardData, setCardData, stylePrompt, setStylePrompt, cardStyle, setCardStyle, presets, onGenerate: generateFullDesign, onGenerateTagline: generateTagline, onRefinePrompt: refineStylePrompt, onGenerateLogo: generateLogo, onSavePreset: handleSavePreset, onLoadPreset: handleLoadPreset, onDeletePreset: handleDeletePreset, onApplyStyleTemplate: handleApplyStyleTemplate }}/>
-        <BusinessCardDisplay cardData={cardData} cardStyle={cardStyle} setCardStyle={setCardStyle} />
-      </div>
-      <footer className="text-center mt-12 text-sm text-gray-500"><p>&copy; {new Date().getFullYear()} Bizzy Card Build</p></footer>
-    </div>
-  );
-}
-
-export default App;
