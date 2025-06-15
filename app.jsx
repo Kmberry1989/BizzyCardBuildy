@@ -488,7 +488,7 @@ function App() {
         <CardInputForm {...{ cardData, setCardData, stylePrompt, setStylePrompt, cardStyle, setCardStyle, presets, onGenerate: generateFullDesign, onGenerateTagline: generateTagline, onRefinePrompt: refineStylePrompt, onGenerateLogo: generateLogo, onSavePreset: handleSavePreset, onLoadPreset: handleLoadPreset, onDeletePreset: handleDeletePreset, onApplyStyleTemplate: handleApplyStyleTemplate }}/>
         <BusinessCardDisplay cardData={cardData} cardStyle={cardStyle} setCardStyle={setCardStyle} />
       </div>
-      <footer className="text-center mt-12 text-sm text-gray-500"><p>&copy; {new Date().getFullYear()} Bizzy Card Build</p></footer>
+      <footer className="text-center mt-12 text-sm text-gray-500"><p>&copy; {new Date().getFullYear()} AI Business Card Generator. Powered by You & Gemini.</p></footer>
     </div>
   );
 }
